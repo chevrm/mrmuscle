@@ -8,7 +8,7 @@ README last updated 2014-02-09
 NOTE: 	THIS SOFTWARE HAS BEEN RELEASED WITH THE HOPE THAT ALL WHO IMPLIMENT
 	IT INTO WORKFLOWS THAT LEAD TO PUBLICATIONS, CITE APPROPRIATELY.
 
-	Collaborations requesting custom implimentations of mrmuscle are
+	Collaborations requesting custom implementations of mrmuscle are
 	welcome; contact via email above.
 
 	Manuscript in preparation.  Please contact via above email to use
@@ -54,7 +54,7 @@ Pipeline Description:
 	- Protein input in fasta format is preprocessed
 	- MUSCLE multiple sequence alignment (maximum 1000 iterations)
 	- Conversion to Nexus format
-	- Postprocessing
+	- Post-processing
 	- MCMC tree generation using MrBayes to <0.01 standard deviation 
 	  or 5M generations
 	- Consensus tree summarized using MrBayes

@@ -12,12 +12,12 @@ Summary:
 
 Installation:
 	- Download master.zip from github.com/chevrm/mrmuscle
-	- Unpack and run ./install-mm from within the master directory
+	- Unpack and run ./install.sh from within the master directory
 
 	Note: for systems with bioperl installed from CPAN, source, or 
 	methods other than apt, 
 	> sh ./src/install-nobioperl.sh 
-	may be run instead of ./install-mm
+	may be run instead of ./install.sh
 
 Dependancies (installed by install-mm if necessary)
 	- bioperl

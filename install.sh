@@ -29,9 +29,9 @@ cd ./src
 directoryx="$(dirname -- $(readlink -fn -- "$0"; echo x))"
 directory="${directoryx%x}"
 sudo apt-get install perl bioperl muscle figtree
-wget http://sourceforge.net/projects/mrbayes/files/mrbayes/3.2.2/mrbayes-3.2.2.tar.gz
+#wget http://sourceforge.net/projects/mrbayes/files/mrbayes/3.2.2/mrbayes-3.2.2.tar.gz
 tar zxvf mrbayes-3.2.2.tar.gz
-rm mrbayes-3.2.2.tar.gz
+#rm mrbayes-3.2.2.tar.gz
 cd mrbayes_3.2.2/src
 autoconf
 ./configure --with-beagle=no

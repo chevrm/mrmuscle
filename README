@@ -53,6 +53,7 @@ Test:
 Pipeline Description:
 	- Protein input in fasta format is preprocessed
 	- MUSCLE multiple sequence alignment (maximum 1000 iterations)
+	- Trim endgaps
 	- Conversion to Nexus format
 	- Post-processing
 	- MCMC tree generation using MrBayes to <0.01 standard deviation 

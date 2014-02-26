@@ -54,7 +54,6 @@ system("perl $mmdir/src/preseqconv.pl $root.afa $root.fi.afa");
 system("perl $mmdir/src/seqconv.pl -d$root.fi.afa -if -on");
 system("perl $mmdir/src/seqconv.pl -d$root.fi.afa -if -opc");
 system("perl $mmdir/src/nexdna2prot.pl $root.fi.nex > $root.fi.prot.nex");
-my $quart = sprintf("%.0f", 0.25*$seqc);
-system("perl $mmdir/src/nexappmb.pl $root.fi.prot.nex $ngen $quart");
+system("perl $mmdir/src/nexappmb.pl $root.fi.prot.nex $ngen");
 system("$mmdir/src/mrbayes $root.fi.prot.nex");
 system("figtree $root.fi.prot.nex.con.tre");

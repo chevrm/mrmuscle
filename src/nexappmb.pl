@@ -23,12 +23,12 @@ use warnings;
 ## appends naked nexus file with mb (mrbayes) script for mcmc tree generation
 ## usage:  perl nexappmb.pl file.nex ngen(int) burnin(int)
 
-my ($nex, $ngen, $burn) = (shift, shift, shift);
+my ($nex, $ngen) = (shift, shift);
 open my $ofh, '>>', $nex or die $!;
 print $ofh "\n" .
         'begin mrbayes;' . "\n" .
         'lset nst=mixed rates=gamma;' . "\n" .
         'mcmc ngen=' . $ngen . ' samplefreq=100 nchains=4 diagnfreq=500 stoprule=yes stopval=0.01;' . "\n" .
-        'sumt contype=halfcompat burnin=' . $burn . ' showtreeprobs=yes;' . "\n" .
+        'sumt contype=halfcompat relburnin=yes burninfrac=0.25 showtreeprobs=yes;' . "\n" .
         'end;';
 close $ofh;
